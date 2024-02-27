@@ -1,0 +1,13 @@
+name: "actions - exercise 1"
+on: 
+  workflow_dispatch:
+    inputs:
+      inputParam:
+        description: 'to print'
+        required: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:              
+      - name: Environment Printer
+        uses: managedkaos/print-env@v1.0
